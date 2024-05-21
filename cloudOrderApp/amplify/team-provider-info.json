@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cloudorderapp-dev-a1ca4-authRole",
+      "UnauthRoleArn": "arn:aws:iam::905418097793:role/amplify-cloudorderapp-dev-a1ca4-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::905418097793:role/amplify-cloudorderapp-dev-a1ca4-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cloudorderapp-dev-a1ca4-deployment",
+      "UnauthRoleName": "amplify-cloudorderapp-dev-a1ca4-unauthRole",
+      "StackName": "amplify-cloudorderapp-dev-a1ca4",
+      "StackId": "arn:aws:cloudformation:us-east-1:905418097793:stack/amplify-cloudorderapp-dev-a1ca4/9b10e260-16c8-11ef-a208-12c76ffad449",
+      "AmplifyAppId": "d1pmo38oq4u7j7"
+    },
+    "categories": {
+      "auth": {
+        "MagikLinkHelper": {}
+      }
+    }
+  }
+}
