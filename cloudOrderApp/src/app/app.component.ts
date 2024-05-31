@@ -1,23 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component'; // Import the LoginComponent
+import { AuthenticationFlowComponent } from './authentication-flow/authentication-flow.component';
 
-/*@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'*/
 @Component({
   selector: 'app-root',
-  template: `
-    <h1>Welcome to My App</h1>
-    <app-login></app-login>
-  `,
   standalone: true,
-  imports: [LoginComponent] // Add LoginComponent to the imports array
+  imports: [LoginComponent, RouterOutlet, AuthenticationFlowComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
 })
-
 export class AppComponent {
   title = 'cloudOrderApp';
 }

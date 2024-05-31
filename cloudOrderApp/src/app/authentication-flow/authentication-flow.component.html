@@ -1,0 +1,7 @@
+<div *ngIf="loading" class="loading">
+  Ti stiamo autenticando...
+</div>
+<div *ngIf="errorMessage" class="error">
+  <h2><i class="fa fa-times-circle"></i> Mi dispiace, autenticazione non andata a buon fine</h2>
+  <p>{{ errorMessage }}</p>
+</div>

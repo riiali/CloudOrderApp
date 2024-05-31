@@ -1,0 +1,63 @@
+/* Stile base del componente */
+:host {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Loader e testo durante il caricamento */
+.loading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0D6EFD;  /* Blu Bootstrap */
+}
+
+/* Icona e messaggio di errore */
+.error {
+  color: #dc3545; /* Rosso Bootstrap */
+  margin-top: 20px;
+}
+
+.error h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.error p {
+  font-size: 16px;
+}
+
+/* Stilizzazione dell'icona di errore */
+.fa-times-circle {
+  color: #dc3545; /* Rosso Bootstrap */
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* Aggiungi un po' di spazio e bordo intorno al componente per un aspetto più pulito */
+:host {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 40px;
+}
+
+/* Anima il loader per rendere l'attesa meno statica */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 4px solid #0D6EFD;
+  border-top-color: transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: spin 1s linear infinite;
+}

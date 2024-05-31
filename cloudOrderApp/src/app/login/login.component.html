@@ -1,5 +1,10 @@
-<div>
-  <input type="email" [(ngModel)]="email" placeholder="Enter your email">
-  <button (click)="sendMagicLink()">Send Magic Link</button>
-  <p>{{ message }}</p>
-</div>
+
+    <div class="container">
+        <img src="../../assets/android-chrome-192x192.png" alt="Rotating bouncing image" class="bounce-image">
+        <form (ngSubmit)="sendMagicLink()" class="email-form">
+            <input type="email" [(ngModel)]="email" name="email" placeholder="Inserisci la tua email" required>
+            <input type="text" [(ngModel)]="username" name="username" placeholder="Scegli un nome utente" required>
+            <input type="text" [(ngModel)]="groupId" name="groupId" placeholder="Inserisci un ID gruppo (opzionale)">
+            <button type="submit">Invia Magic Link</button>
+        </form>
+    </div>
